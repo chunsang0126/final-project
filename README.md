@@ -1,98 +1,57 @@
 
-![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Welcome to Final Project!
-
-## Project Goals
-* Do an e2e analysis by your own:
-  * Give some insights about a topic of your choice giving some arguments by:
-    * Being able to transmit the analysis in an ordered way.
-    * Using the statistical/ML techniques learnt during the last weeks.
-    * Plotting the graphs in a useful way for the reader / listener.
-  * Present your analysis in two ways and for two different audiencies:
-    * Technical audience: you will present a paper.
-    * Jury: you will do a presentation.
-    
-    
-## Considerations
-* You can be in team (3 max) or on your own.
-* You can include ML or statistics or not. But to do a proper analysis you will need something...
-* You can use the data from your last project.
-* You can focus on:
-  * Learning more on something that you need to grow.
-  * Learning more on something that is where you feel comfortable.
-
-## Deliverables
-* A notebook with your analysis in a paper way. Jupyter or Zeppelin are allowed.
-* A 10' presentation in the auditorium.
-* A 10' presentation for the jury.
-* Repository with your workflow + documentation + code. Even if you are working alone, you need to keep good practices!
-* Database.
-
-## General schedule
-*Wednesday*
-* Which will be your team/individual.
-* Your topic.
-
-
-*Thursday*
-* Repository link.
-* README overview (you have a template)
-* Dataset chosen
-* Teachers validation --NO CODE UNTIL HERE--
-
-*Monday morning*
-* Database schema validation.
-
-*Monday*
-* Data in the database.
-
-*Tuesday evening*
-* Analysis validation.
-
-*Wednesday*
-* First rehearshall.
-
-*Thursday morning*
-* General rehearshall.
-
-*Thursday evening*
-* Presentation!
-
-## General advices
-* Organize yourself (don't get lost!). Respect the deadlines.
-* Ask for help vs Google is your friend.
-* Define a simple approach first. You never know how the data can betray you ;)
-* Documentate yourself. Know about the problem. Look for some analysis that someone did before you.
-* Before doing a graph, think what you want to represent.
-* Don't force yourself to use tecniques if it's not useful for your objective.
 
 # README Template
 
-[Your Final Project Title]
-[Your Name]
-
-[Your Cohort Campus & Time]
+# Grand Slam Analysis
+## Alejandro & Chun
+## Data Analytics Barcelona Feb to Apr 2019]
 
 ### Overview
-Include the following points in your overview:
+
+The project aims to identify the most important statistics which determine the result of 
+the Grand Slam games and predict the result of two upcoming tournaments.
 
 * What data/business/research/personal question you would like to answer?
 Make sure the question description is human-friendly because you will have non-tech audience to see your final project presentation.
+
+A brief intro of the game is given followed by the 3 most important statistics. 
+Data like physical measures of players and statistics of past tournaments and rankings are all taken into account in our analysis. 
+
+Then the next step is prediction specific to clay court tournaments. Since Monte Carlo and French Open is played in April and May every year. An analysis showing correlation of performance in the prior and that to the later will be performed. Besides, a prediction model will be built to predict winner of the two tournaments.
+
+Hypothesis Test:
+Ideas: 
+Players who have higher breakpoints saved percentage will always win the game
+Players who has significantly more aces will win the game
+Player who have more double fault will lose the game
+The number of ace is higher in hard/grass than on clay
+
+
+
 * Did you understand the context for the question and the scientific or business application?
+
+
 * What is the hypothesis you would like to test in order to answer your question?
 Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+
+
 * Did you consider whether the question could be answered with the available data?
+
+
 * How will you test your hypothesis?
 * How will you test your success?
-
-
 
 
 ### Data Preparation
 Overview:
 * What is your dataset about?
 * Where/how did you obtain your dataset?
+
+The dataset contains 103 csv files of the past ATP matches, qualifiers and future games record from year 1968 up to 2018. Each columns in csv files contains stats of one match from 32/64 up to finals in absolute figures. Both winner and loser data is recorded in the same row.
+
+[Kaggle dataset](https://github.com/awesomedata/awesome-public-datasets#timeseries)
+
 It can be either a public dataset or collected with API/web scraping.
 Provide a link if possible.
 * General description of the dataset such as the size, complexity, data types, etc.
@@ -114,6 +73,9 @@ Your full process of data wrangling and cleaning.
 
 ### Model Training and Evaluation
 * Train your ML model, produce results, and evaluate.
+Random Forest Classifier
+Logistic Regressions
+
 * This is an iterative process. Try your best to improve your model performance by:
   * Try different models and select one that is the simplest yet produce the best result.
   * Try advanced techniques and see if they improve the result.
