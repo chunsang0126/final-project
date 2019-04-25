@@ -1,4 +1,4 @@
-![alt text](./Analysis/grand_slam.jpg)
+![alt text](./Photo/grand_slam.jpg)
 
 
 # Tennis Myth Buster - Grand Slam Analysis
