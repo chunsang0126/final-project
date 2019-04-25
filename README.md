@@ -1,7 +1,7 @@
-![alt text](https://raw.githubusercontent.com/chunsang0126/final-project/grand_slam.jpg)
+![alt text](./grand_slam.jpg)
 
 
-
+/Users/johnngai/Desktop/Screenshot 2019-04-24 at 10.24.51 AM.png
 # Tennis Myth Buster - Grand Slam Analysis
 
 ## Alejandro & Chun
