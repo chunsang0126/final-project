@@ -44,16 +44,46 @@ The data is cleaned and imported into Google Cloud database. The database contai
 
 
 ### Model Training and Evaluation
-* Train your ML model, produce results, and evaluate.
-Random Forest Classifier
-Logistic Regressions
+
+Machine Learning model is WIP.  Oversampling for unbalanced class and cross validation is yet to be applied, followed by hyper parameter tuning.
+1. xgBoost Classifier
+2. Random Forest Classifier
+3. Logistic Regressions
+
+Metrics to be applied
+1.Accuracy
+2.Precision
+3.Recall
+4.F1 Score
 
 
 ### Conclusion
-* Summarize your data analysis result.
+Hypothesis testing
+
+1. A players has lower chance of winning against of left-handed player regardless of his own play-hand
+
+2. Top players have higher break point percentage than serve point percentage
+
+3. Tall player make more aces than short player
+
+Hypothesis testing 
+- Null hypothesis H0: difference in avg no. of ace in tall player and short player sample =0
+- Alternative hypothesis H1: difference in avg. no. of ace in tall player and short player sample != 0
+
+Result: Null hypothesis rejected with p-value of 2.07*10^-12. 
+
+4. The more minutes a game is played, the high percentage of double faults 
+
+5. The higher the rank difference of two players, the less number of sets in a match.
+Rank difference is binned into 5 groups, they are 10,20,30,40,50. 
+Correlation of avg rank difference and avg. no. of set played is -0.98.
+ Results: Theory confirmed.
+
 * State your conclusion of your hypothesis testing.
 * Interpret your findings in terms of the human-understandable question you try to answer.
 
-### What are the next steps?
+### Next steps
+Implementation of classification model to predict winners of future matches.
+
 
 
